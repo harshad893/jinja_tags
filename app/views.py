@@ -7,5 +7,5 @@ def jinja_print(request):
     return render(request,'h1.html',context=d)
 
 def jinja_operation(request):
-    d={'a':90,'b':890}
+    d={'a':100,'b':800,'c':890,'name':'Ashu'}
     return render(request,'h2.html',d)

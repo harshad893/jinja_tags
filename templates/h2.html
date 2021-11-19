@@ -10,10 +10,23 @@
     <center>
         <h6>jinja operational tags</h6>
         {% if a > b %}
-            <h2>{{a}}</h2>
+            {% if a > c %}
+                <h2>a is greater</h2>
+            {% else %}
+                <h2>c is greater</h2>
+            {% endif %}
         {% else %}
-        {{b}}
+            {% if b > c %}
+                <h2>b is greater</h2>
+            {% else %}
+                <h2>c is greater</h2>
+            {% endif %}
         {% endif %}
+
+        {% for i in name %}
+            <h2>{{i}}</h2>
+        {% endfor %}
+
     </center>
 </body>
 </html>
